@@ -36,9 +36,11 @@ class AboutUsComponent extends Component{
             <Row className="row" id="sloganText">
               <H4 className="h4">We are a fraterity that values both its brotherhood and community.</H4>
             </Row>
-            <Div className="d-flex justify-content-end" id="backToTop">
-              <a href="#logoDiv">Back To Top</a>
-            </Div>
+            <Row>
+              <Div className="d-flex justify-content-end" id="backToTop">
+                <a href="#logoDiv">Back To Top</a>
+              </Div>
+            </Row>
           </Container>
       </Div>
     </Fragment>
