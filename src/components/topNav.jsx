@@ -18,6 +18,9 @@ import {
 } from "react-bootstrap";
 import masonicLogo from '/images/masonicLogo.jpg';
 
+//const sass = require('sass');
+
+
 const logoImg = new Image();
 logoImg.src = masonicLogo;
 

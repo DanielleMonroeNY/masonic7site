@@ -1,21 +1,29 @@
-@import '~bootstrap/scss/bootstrap';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
-#navSection, #bottomNavSection{
-    background-color: #414d6e;
+#navSection, #previousEventsSection, #bottomNavSection{
+  background-color: #414d6e;
+  color: #f6ba28;
+  padding: 15px;
+}
+
+#navSection, #sloganSection, #previousEventsSection, #upcomingEventsSection, #bottomNavSection{
     max-width: 100%;
     max-height: fit-content;
-    color: #f6ba28;
-    padding: 15px;
   }
   
-  h1{
+  #imgLogo{
+    max-width: 200px;
+    max-height: 200px;
+    margin: 5px;
+  }
+
+  #sloganSection, #previousEventsSection, #upcomingEventsSection{
+    padding: 10px;
+  }
+
+  .h1{
     padding-top: 15px;
     color: #f6ba28 ;
-  }
-  
-  h2, h4{
-    text-align: center;
-    color: #3b59ad;
   }
   
   #dropBttn{
@@ -26,45 +34,33 @@
   #dropdown-menu{
     color: #414d6e;
     padding: 3px;
-    
   }
   
   .nav-link{
     padding: 3px;
   }
   
-  
-  #sloganSection{
+  #sloganSection, #upcomingEventsSection{
     background-color: #ffffff;
     color: #3b59ad;
-    max-width: 100%;
-    padding: 10px;
-    text-align: center;
   }
   
-  #previousEventsSection{
-    color: #414d6e;
-    background-color: #3b59ad;
-    color: #ffffff;
-    padding: 10px;
-  }
   
   #carouselRow{
-    padding: 10px;
+    padding: 1px;
+    align-content: center;
   }
   
   .carousel-inner{
     align-items: center;
-    max-width: 75%;
-    max-height: 75%;
+    
     image-resolution: 100px;
+    margin: 0, auto;
   }
-  
-  #upcomingEventsSection{
-    background-color: #ffffff;
-    color: #3b59ad;
-    padding: 10px;
-   
+  .carousel-inner > img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
   }
   
   #cardColumn{
@@ -73,18 +69,35 @@
   }
   
   .card-body, .card-header{
-    color: #414d6e;
+    color: #3b59ad;
   }
   
   .list-group-item{
     align-items: flex-start;
   }
-  
-  #socialsBorder{
-    border-left: #f6ba28;
-    border-width:initial;
-  }
-  
-  #emailLink, #backToTopBottom{
+
+  #emailLink, #backToTopBottom #backToTopPrev{
     color: #fff;
   }
+
+  #socials{
+    border-left: #f6ba28; 
+    border-radius: 10px;
+  }
+
+  #fbSocial, #igSocial{
+    max-width: 75px;
+    max-height: 75px;
+  }
+
+.h2, .h3, #backToTop, #BbackToTopBottom, #backToTopPrev{
+  padding: 5px;
+}
+
+.carousel-control-prev > button{
+  justify-content: flex-start;
+}
+
+.carousel-control-next > button{
+  justify-content: flex-end;
+}

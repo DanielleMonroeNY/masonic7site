@@ -1,13 +1,14 @@
 import {
   React,
   ReactDOM,
+ // useState
   //createContainer
  } from "react"
 //import createRoot from "react-dom/client"
 
 import "./stylesheets/App.css"
 import "./stylesheets/index.css"
-/**
+
 //Import components of homepage
 import Header from "./components/header"
 import TopNavFragment from "./components/topNav"
@@ -15,8 +16,9 @@ import AboutUsFragment from "./components/about"
 import PreviousEventsFragment from "./components/previousEvents"
 import UpcomingEventsFragment from "./components/upcomingEvents"
 import BottomNavFragment from "./components/bottomNav"
-import { createRoot } from "react-dom/client"
-
+//import { createRoot } from "react-dom/client"
+import TopNavComponent from "./components/topNav"
+/*
 //functions to make js exports to jsx components
 //const headerContainer = createContainer(Header)
 //const topNavContainer = createContainer(TopNavFragment)
@@ -72,11 +74,19 @@ function App(){
   return(
   <>
     <div className= "container">
-      app.JSX
+      <TopNavFragment></TopNavFragment>
     </div>
 
-    <div className="container-fluid">
+    <div className= "container">
+      <AboutUsFragment></AboutUsFragment>
+    </div>
 
+    <div className= "container">
+      <PreviousEventsFragment></PreviousEventsFragment>
+    </div>
+
+    <div className="container">
+      <BottomNavFragment></BottomNavFragment>
     </div>
     
   </>
