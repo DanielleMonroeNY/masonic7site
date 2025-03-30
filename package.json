@@ -1,8 +1,17 @@
 {
   "name": "masonic7site",
-  "private": true,
   "version": "0.0.0",
+  "author": "Danielle T Monroe",
   "type": "module",
+
+  "files": [
+    "%PUBLIC_URL%",
+    "amplify",
+    "bootstrap",
+    "public",
+    "src"
+  ],
+  "main": "./index.html",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
