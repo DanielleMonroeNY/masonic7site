@@ -78,6 +78,7 @@ function App(){
     </div>
 
     <div className= "container">
+      <p>Hello from App.jsx</p>
       <AboutUsFragment></AboutUsFragment>
     </div>
 
