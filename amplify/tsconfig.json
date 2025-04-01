@@ -1,5 +1,7 @@
 {
+  "include": ["../../node_modules/react-router/dist/development/lib/types/router-module.js"],
   "compilerOptions": {
+    "rootDirs": [".", "../node_modules/react-router/dist/development/lib/types"],
     "target": "es2022",
     "module": "es2022",
     "moduleResolution": "bundler",
