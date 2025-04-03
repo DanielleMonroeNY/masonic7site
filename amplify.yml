@@ -3,13 +3,12 @@ backend:
   phases:
     build:
       commands:
-      - export VITE_APP_SUPABASE_URL=$(aws ssm get-parameter --name "/amplify/masonic7site/staging/VITE_APP_SUPABASE_URL" --with-decryption --query "Parameter.Value" --output text)
-        - export VITE_APP_SUPABASE_ANON_KEY=$(aws ssm get-parameter --name "/amplify/masonic7site/staging/VITE_APP_SUPABASE_ANON_KEY" --with-decryption --query "Parameter.Value" --output text)
         - npm run build
 frontend:
   phases:
     build:
       commands:
+        -'cd app/compute/default/ && npm install'
         - npm run build
   artifacts:
     baseDirectory: dist
