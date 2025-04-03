@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from "react";
 import axios from "axios";
 import '../stylesheets/index.css';
+import '../stylesheets/styles.scss';
 //import * as bootstrap from "react-bootstrap";
 import { 
     Container,
