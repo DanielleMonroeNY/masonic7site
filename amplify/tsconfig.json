@@ -1,9 +1,7 @@
 {
-  "include": ["../../node_modules/react-router/dist/development/lib/types/router-module.js"],
   "compilerOptions": {
-    "rootDirs": [".", "../node_modules/react-router/dist/development/lib/types"],
     "target": "es2022",
-    "module": "es2022",
+    "module": "ESNext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "esModuleInterop": true,
@@ -11,9 +9,11 @@
     "strict": true,
     "skipLibCheck": true,
     "paths": {
-      "$amplify/*": [
-        "../.amplify/generated/*"
-      ]
-    }
-  }
+      "$amplify/*": ["../.amplify/generated/*"],
+      "@compoents/*": ["src/components/*"]
+    },
+    "baseUrl": "./"
+  },
+  "include": ["../src/**/*", "../public/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
