@@ -1,15 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router";
-import "./index.css";
-import App from "../../src/App.jsx";
+import { type RouteConfig, route } from "@react-router/dev/routes";
 
-ReactDOM.createRoot(
-  document.getElementById("root")!
-).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
-);
+export default [
+  route("some/path", "./client.entry.tsx"),
+  // pattern ^           ^ module file
+] satisfies RouteConfig;

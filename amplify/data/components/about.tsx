@@ -2,13 +2,9 @@ import React, {Component, Fragment} from "react";
 import axios from "axios";
 import '../stylesheets/index.css';
 //import * as bootstrap from "react-bootstrap";
-import { 
-    Container,
-    Div,
-    H2,
-    H4,
-    Row
-} from "react-bootstrap";
+import Container from "../../../node_modules/react-bootstrap/Container";
+import Row from "../../../node_modules/react-bootstrap/Row";
+import Image from "../../../node_modules/react-bootstrap/Image";
 
 //import { render } from "@testing-library/react";
 
@@ -27,23 +23,21 @@ class AboutUsComponent extends Component{
 
   render(){
     return(
-      <Fragment>
-        <Div id="sloganSection">
+        <Container id="sloganSection">
           <Container className="container-fluid justify-content-center">
             <Row className="row" id="sloganSectDiv">
-              <H2 className="h2" id="sloganTitle">Follow Reason</H2>
+              <h2 className="h2" id="sloganTitle">Follow Reason</h2>
             </Row>
             <Row className="row" id="sloganText">
-              <H4 className="h4">We are a fraterity that values both its brotherhood and community.</H4>
+              <h4 className="h4">We are a fraterity that values both its brotherhood and community.</h4>
             </Row>
             <Row>
-              <Div className="d-flex justify-content-end" id="backToTop">
+              <Container className="d-flex justify-content-end" id="backToTop">
                 <a href="#logoDiv">Back To Top</a>
-              </Div>
+              </Container>
             </Row>
           </Container>
-      </Div>
-    </Fragment>
+      </Container>
     );
   }
 }
