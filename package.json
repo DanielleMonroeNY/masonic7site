@@ -2,7 +2,7 @@
   "name": "masonic7site",
   "version": "0.0.0",
   "author": "Danielle T Monroe",
-  "types": "index.html",
+  "types": "module",
   "files": [
     "%PUBLIC_URL%",
     "amplify",
